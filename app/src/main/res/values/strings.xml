@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="title_home">News</string>
+    <string name="title_dashboard">Weather</string>
+
+    <string name="app_name">NewsAndWeather</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pressure">Pressure</string>
+    <string name="_75">75 %</string>
+    <string name="humidity">Humidity</string>
+    <string name="_75_m_s">75 m/s</string>
+    <string name="wind">Wind</string>
+    <string name="thursday_2019">Thusday 2019</string>
+    <string name="thunder_storm">thunder storm</string>
+    <string name="temp">Temp</string>
+    <string name="_24c_25c">24C - 25C</string>
+</resources>

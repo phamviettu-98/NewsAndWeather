@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/transparent_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="6"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/iconWeatherDetail"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                tools:ignore="ContentDescription"
+                app:tint="#fff" />
+
+            <TextView
+                android:id="@+id/tv_detailStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:text="@string/thunder_storm"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry"
+                android:paddingRight="10dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:src="@drawable/baseline_access_time_white_48dp"
+                tools:ignore="ContentDescription"
+                app:tint="#fff">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_timeUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:text="@string/thursday_2019"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry"
+                android:paddingRight="10dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/temp"
+                tools:ignore="ContentDescription"
+                app:tint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center|left"
+                android:text="@string/temp"
+                android:textColor="#fff"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_detailTemp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:text="@string/_24c_25c"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry">
+
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/wind"
+                tools:ignore="ContentDescription"
+                app:tint="#fff">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center|left"
+                android:text="@string/wind"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                tools:ignore="RtlHardcoded"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_detailWind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:text="@string/_75_m_s"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/humidity"
+                tools:ignore="ContentDescription"
+                app:tint="#fff">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center|left"
+                android:text="@string/humidity"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                tools:ignore="RtlHardcoded"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_detailHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center|right"
+                android:paddingEnd="10dp"
+                android:text="@string/_75"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry"
+                android:paddingRight="10dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/pressure"
+                tools:ignore="ContentDescription"
+                app:tint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center|left"
+                android:text="@string/pressure"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/tv_detailPressure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center|right"
+                android:paddingEnd="10dp"
+                android:text="24 hPa"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+                android:paddingRight="10dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="UselessLeaf" />
+    </LinearLayout>
+
+
+</FrameLayout>

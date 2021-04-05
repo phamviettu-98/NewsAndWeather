@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tttt"
+    tools:context=".weatherFragment">
+    <TextView
+        android:id="@+id/tv_City"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="HANOI-VN"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:id="@+id/iconStatusWeather"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        tools:ignore="ContentDescription">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/tv_Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-thin"
+       android:layout_gravity="center"
+        android:text="29°C"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_gravity="center"
+        android:text="Rain"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="10dp"
+
+        android:background="@drawable/transparent_bg"
+        android:id="@+id/weatherForcast_recylceview"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="400dp"
+
+         >
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
